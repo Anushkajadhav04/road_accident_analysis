@@ -19,6 +19,7 @@ An interactive Power BI dashboard analyzing 1.5 Million+ real UK road accident r
 
 ● Good news: Accidents declined consistently from 227K (2005) to 171K (2011)
 
+
 🛠️ Tools Used:
 
 ✅ Power BI — Interactive 2-page dashboard with slicers & drill-through
@@ -28,6 +29,7 @@ An interactive Power BI dashboard analyzing 1.5 Million+ real UK road accident r
 ✅ DAX — Custom measures for KPIs, YoY trends & severity analysis
 
 ✅ Data Source: UK Department for Transport (via Kaggle)
+
 
 📂 Dataset Information
 
@@ -42,6 +44,7 @@ Years Covered: 2005 – 2012
 License: Open Government Licence (OGL)
 
 Link: UK Road Safety Data on Kaggle
+
 
 ⚙️ DAX Measures Used
 
@@ -61,6 +64,7 @@ YoY Change % =
 VAR CY = TOTALYTD([Total Casualties], 'Date'[Date])
 VAR PY = CALCULATE([Total Casualties], SAMEPERIODLASTYEAR('Date'[Date]))
 RETURN DIVIDE(CY - PY, PY, 0)
+
 
 💡 Key Learnings
 
